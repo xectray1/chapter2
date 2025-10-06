@@ -347,15 +347,11 @@ local TeleportLocations = {
     ["basement"] = CFrame.new(-149, -15, 3),
     ["basement top"] = CFrame.new(-149, 5, 37),
     ["locker"] = CFrame.new(-117, -16, 1),
-    ["wheel"] = CFrame.new(1144, 57, 210),
-    ["engine"] = CFrame.new(603, 60, 916),
-    ["hammer"] = CFrame.new(650, 56, 902),
-    ["paint"] = CFrame.new(1017, 71, 865),
-    ["shovel"] = CFrame.new(135, 56, 908),
-    ["bigger farm"] = CFrame.new(147, 56, 914)
+    ["alchemy room"] = CFrame.new(-45, -16, -2),
+    ["alchemy book"] = CFrame.new(-92, -16, 23),
+    ["generator"] = CFrame.new(-158, 5, 48),
 }
-local SelectedLocation = ""
-
+local SelectedLocation = "alchemy room"
 MainBox1:AddDropdown("TeleportLocationDropdown", {
     Values = getKeys(TeleportLocations), 
     Default = 1,
