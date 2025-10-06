@@ -357,7 +357,6 @@ MainBox1:AddDropdown("TeleportLocationDropdown", {
     Default = 1,
     Multi = false,
     Text = "locations",
-    Tooltip = "seats is in bigger farm",
     Callback = function(value)
         SelectedLocation = value
     end
