@@ -41,6 +41,9 @@ MainBox:AddButton("no fog", function()
 end);
 MainBox:AddButton("rejoin server", function()
     game.Players.LocalPlayer:Kick("rejoining")
+    queue_on_teleport[[
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xectray1/realloader/refs/heads/main/books.lua"))()
+    ]]
     wait()
     cloneref(game:GetService("TeleportService")):Teleport(game.PlaceId, game.Players.LocalPlayer);
 end);
